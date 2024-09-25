@@ -1,0 +1,1 @@
+export { carta_vidaRouter } from './carta_vida.router.js';
