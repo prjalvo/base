@@ -13,14 +13,14 @@ export default {
         }
       },   
 
-    host  : process.env.DB_HOST ,
+    host  : process.env.DB_HOST,
 
     
     /**
      * Here you may specify the port of database which will be
      * used for connection
      */
-    port : process.env.DB_PORT ,
+    port : process.env.DB_PORT,
 
 
     /**
@@ -34,7 +34,7 @@ export default {
      * Here you may specify the username of database which will be
      * used for connection
      */
-    username : process.env.DB_USERNAME ,
+    username : process.env.DB_USERNAME,
 
     
     /**
