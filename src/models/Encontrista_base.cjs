@@ -16,5 +16,5 @@ module.exports = (sequelize, DataTypes) => {
   encontrista_base.associate = function(models) { 
     encontrista_base.hasMany(models.carta_vida_base, { foreignKey: 'id_participante', as: 'cartas' });
   };
-  return encontrista;
+  return encontrista_base;
 };
