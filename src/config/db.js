@@ -27,7 +27,7 @@ export default {
      * Here you may specify the database name of connection which will be
      * used for connection
      */
-    database  : process.env.DB_DATABASE ",
+    database  : process.env.DB_DATABASE,
 
     
     /**
@@ -41,5 +41,5 @@ export default {
      * Here you may specify the password of database which will be
      * used for connection
      */
-    password : process.env.DB_PASSWORD ",
+    password : process.env.DB_PASSWORD,
 }
