@@ -84,10 +84,10 @@ export default {
             .then(carta_vida_base => {
                 if (carta_vida_base) {
                     return db.carta_vida_base.update({
-                        texto:texto ? texto : carta_vida.texto ,
-                        imprimiu:imprimiu ? imprimiu : carta_vida.imprimiu,
-                        id_participante:id_participante ? id_participante : carta_vida.id_participante,
-                        remetente:nome ? nome : carta_vida.nome
+                        texto:texto ? texto : carta_vida_base.texto ,
+                        imprimiu:imprimiu ? imprimiu : carta_vida_base.imprimiu,
+                        id_participante:id_participante ? id_participante : carta_vida_base.id_participante,
+                        remetente:nome ? nome : carta_vida_base.nome
                     },{where: {id: parseInt(id)}})
                 }
                 throw new RequestError('No data found')
@@ -109,7 +109,7 @@ export default {
             .then(carta_vida_base => {
                 if (carta_vida_base) {
                     return db.carta_vida_base.update({                      
-                        imprimiu:imprimiu ? imprimiu : carta_vida.imprimiu                     
+                        imprimiu:imprimiu ? imprimiu : carta_vida_base.imprimiu                     
                     },{where: {id_participante: parseInt(id)}})
                 }
                 throw new RequestError('No data found')
